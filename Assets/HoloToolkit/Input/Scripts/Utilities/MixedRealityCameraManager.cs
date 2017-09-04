@@ -37,6 +37,11 @@ namespace HoloToolkit.Unity.InputModule
             Camera.main.clearFlags = CameraClearFlags.Skybox;
             Camera.main.nearClipPlane = OpaqueNearPlane;
 
+            // Set matrix directly because of camera bug in Unity2017.2.0b8
+            var projection = Matrix4x4.Perspective(100.6689f, 1440.0f / 1440.0f, 0.01f, 500f);
+            Camera.main.SetStereoProjectionMatrix(Camera.StereoscopicEye.Left, projection);
+            Camera.main.SetStereoProjectionMatrix(Camera.StereoscopicEye.Right, projection);
+
             SetQuality(OpaqueQualityLevel);
         }
 
