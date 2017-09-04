@@ -20,11 +20,11 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientSkyColor: {r: 0.8627451, g: 0.84705883, b: 1, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 0
+  m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: 75f523500f790cb41a556d97e36870a0, type: 2}
   m_HaloStrength: 0.5
@@ -384,9 +384,19 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114089264199067956, guid: 0fc628c0aaea3a149bc2e7e3ac97990f,
+        type: 2}
+      propertyPath: ParentObject
+      value: 
+      objectReference: {fileID: 823334746}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0fc628c0aaea3a149bc2e7e3ac97990f, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &823334746 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1863774134760532, guid: 0fc628c0aaea3a149bc2e7e3ac97990f,
+    type: 2}
+  m_PrefabInternal: {fileID: 823334745}
 --- !u!1001 &878891784
 Prefab:
   m_ObjectHideFlags: 0
